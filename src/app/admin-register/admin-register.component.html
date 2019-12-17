@@ -1,0 +1,91 @@
+<div class="container">
+   <form [formGroup]="signupForm" class="form-horizontal" role="form" text-align="center">
+	  
+			 <h2 class=" text-warning" >User Registration</h2>
+			 <table text-align="center">
+				
+				 <tr>
+	  
+		  <td>
+           <label for="firstName" class="col-sm-3 control-label">FirstName:</label>
+			 </td>
+			 <td>
+				 <input type="text" id="firstName" 
+				 formControlName="firstName"   placeholder="First Name" class="form-control" autofocus>
+				 <span *ngIf="!signupForm.get('firstName').valid && signupForm.get('firstName').touched" class="help-block">Please enter valid Name!</span>
+			</td>
+	
+	  </tr>
+	 
+	  <tr>
+	 
+		   <td>
+           <label for="lastName" class="col-sm-3 control-label">LastName:</label>
+			 </td>
+		   <td>
+				 <input type="text" id="lastName" 
+				 formControlName="lastName"      placeholder="Last Name" class="form-control" autofocus>
+			
+	  <span *ngIf="!signupForm.get('lastName').valid && signupForm.get('lastName').touched" class="help-block">Please enter valid Name!</span>
+	   </td>
+	</tr>
+	
+	  
+	  <tr>
+	  
+		   <td>
+           <label for="password" class="col-sm-3 control-label">Password: </label>
+			</td>
+		   <td>
+				 <input type="password" id="password" formControlName="password"       placeholder="Password" class="form-control" autofocus>
+			
+	 <span *ngIf="!signupForm.get('password').valid && signupForm.get('password').touched" class="help-block">Please enter valid Password!</span>
+	 </td>
+	</tr>
+	 
+	  <tr>
+	
+		  <td>
+           <label for="email" class="col-sm-3 control-label">Email: </label>
+			 </td>
+		    <td>
+				 <input type="email" id="email" formControlName="email"   placeholder="Email" class="form-control" autofocus>
+		
+	 <span *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched" class="help-block">Please enter valid email!</span>
+	 	</td>
+	</tr>
+	  
+	  <tr>
+	 
+		  <td>
+           <label for="mobile" class="col-sm-3 control-label">Mobile: </label>
+			</td>
+		   <td>
+				 <input type="phonenumber" formControlName="mobile"      id="mobile" placeholder="PhoneNumber" class="form-control" autofocus>
+			
+	  <span *ngIf="!signupForm.get('mobile').valid && signupForm.get('mobile').touched" class="help-block">Please enter valid PhoneNumber!</span>
+	  </td>
+	</tr>
+	  <tr>
+	 
+		  <td>
+           <label for="role" class="col-sm-3 control-label">Mobile: </label>
+			</td>
+		   <td>
+				 <input type="text" formControlName="role"      id="role" placeholder="Role" class="form-control" autofocus>
+		
+	  <span *ngIf="!signupForm.get('role').valid && signupForm.get('role').touched" class="help-block">Please enter valid Role!</span>
+	  	</td>
+	</tr>
+	  
+	  <tr>
+		  <td></td>
+		   <td>
+   <button type="submit" class="btn btn-primary btn-block">Register</button>
+   </td>
+   </tr>
+   </table>
+   </form>
+
+
+</div>

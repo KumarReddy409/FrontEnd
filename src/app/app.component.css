@@ -1,0 +1,19 @@
+#topheader .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #fff;
+	transition: background-color .2s, color .2s;
+}
+	a:hover,
+	a:focus {
+		background-color: #EE82EE;
+		color: #fff;
+	
+}
+
+#topheader .navbar-nav li.active > a {
+	background-color: #333;
+	color: #fff;
+}
+.heading{
+	background-color: DCDCDC;
+}

@@ -1,0 +1,31 @@
+<div class="container">
+   <form  #f="ngForm" class="form-horizontal" role="form" text-align="center">
+	  
+       <h2 class="text-warning">View Work Log Details</h2>
+       <table text-align="center">
+        <tr>
+	
+		  <td>
+           <label for="email" class="col-sm-3 control-label">Email: </label>
+			 </td>
+		    <td>
+				 <input type="email" id="email"    placeholder="Email" class="form-control" autofocus
+				 ngModel name="email"  required email #email="ngModel">
+		
+	 <span *ngIf="!email.valid && email.touched" class="help-block">Please enter valid email!</span>
+	 	</td>
+	</tr>
+    
+    
+     <tr>
+		  <td></td>
+		   <td>
+   <button type="submit" class="btn btn-primary btn-block">Enter Email to Get Details</button>
+   </td>
+   </tr>
+
+
+
+
+
+       </table>
